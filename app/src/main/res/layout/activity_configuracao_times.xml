@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ConfiguracaoTimes"
+    android:background="@drawable/gradient_background">
+    <include
+        android:id="@+id/toolbarSettingsTeam"
+        layout="@layout/toolbar" >
+
+    </include>
+
+    <TextView
+        android:layout_below="@+id/toolbarSettingsTeam"
+        android:id="@+id/txtTipoJogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escolha o tipo de jogo :"
+        android:textSize="25sp"
+        android:layout_marginTop="9dp"
+        android:layout_marginHorizontal="8dp"
+        android:textColor="@color/primary_light"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTipoJogo"
+        android:layout_marginTop="4dp"
+        android:layout_marginHorizontal="8dp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="25dp"
+        android:background="@drawable/background_button">
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:id="@+id/rBtnSalao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Salão"
+                android:textColor="@color/primary_light"
+                android:textSize="@dimen/size_txt_radiobutton" />
+
+            <RadioButton
+                android:id="@+id/BtnCampo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Campo"
+                android:textColor="@color/primary_light"
+                android:textSize="@dimen/size_txt_radiobutton"/>
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            >
+
+            <RadioButton
+                android:id="@+id/rBtnSociety"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/primary_light"
+                android:text="Society"
+                android:textSize="@dimen/size_txt_radiobutton"/>
+
+            <RadioButton
+                android:id="@+id/rBtnCustom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Custom "
+                android:textColor="@color/primary_light"
+                android:textSize="@dimen/size_txt_radiobutton"/>
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

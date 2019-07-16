@@ -1,6 +1,5 @@
 package co.nf.axesoft.sempanela1.activity;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
@@ -20,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        toolbar = findViewById(R.id.toolbarMain);
+        toolbar = findViewById(R.id.toolbarSettingsTeam);
         toolbar.setTitle("Tira o time aí");
         setSupportActionBar(toolbar);
 
