@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
                 return true;
 
             case R.id.fecharAction :
-
+                finish();
             default:
                 return super.onOptionsItemSelected(item);
         }
