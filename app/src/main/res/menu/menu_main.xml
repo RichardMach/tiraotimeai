@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/fecharAction"
+        app:showAsAction="never"
+        android:orderInCategory="400"
+        android:title="Fechar App" />
+    <item
+        android:id="@+id/timesAction"
+        app:showAsAction="never"
+        android:orderInCategory="100"
+        android:title="Times" />
+    <item
+        android:id="@+id/sobreAction"
+        app:showAsAction="never"
+        android:orderInCategory="300"
+        android:title="Sobre" />
+    <item
+        android:id="@+id/limpardadosAction"
+        app:showAsAction="never"
+        android:orderInCategory="200"
+        android:title="Limpar Dados" />
+
+</menu>

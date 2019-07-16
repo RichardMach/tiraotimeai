@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.PresentationActivity"
+    android:orientation="vertical"
+    android:background="@color/colorBg"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="57dp"
+        android:fontFamily="@font/atma_semibold"
+        android:text="Sem panela"
+        android:textColor="#FFFFFF"
+        android:textSize="60sp" />
+
+    <ImageButton
+        android:id="@+id/btnAddJogadores"
+        android:layout_width="134dp"
+        android:layout_height="134dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/ic_person_add_white_24dp" />
+
+    <TextView
+        android:id="@+id/txtMsgHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="340dp"
+        android:fontFamily="monospace"
+        android:text="Adicionar jogadores"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="233dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="@drawable/rounded">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Acabou a panelinha!!! Clique no botão de adicionar acima e tire foto de todos os pernas-de pau que querem jogar.Depois disso o app automaticamente irá gerar os times sem desculpinha de panela!Bom jogo"
+            android:textSize="16sp"
+            android:padding="6dp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtPresentation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="monospace"
+        android:text="by AxeApp 2019"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+
+
+</RelativeLayout>
