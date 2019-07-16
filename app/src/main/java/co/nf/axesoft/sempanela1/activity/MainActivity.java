@@ -7,21 +7,28 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.widget.Toast;
 
 import co.nf.axesoft.sempanela1.R;
+import co.nf.axesoft.sempanela1.model.Times;
 
 public class MainActivity extends AppCompatActivity {
 
     private Toolbar toolbar;
+    private ListView listView;
+    private ArrayAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        toolbar = findViewById(R.id.toolbarSettingsTeam);
+        toolbar = findViewById(R.id.toolbarMain);
         toolbar.setTitle("Tira o time aí");
         setSupportActionBar(toolbar);
+
 
     }
 
