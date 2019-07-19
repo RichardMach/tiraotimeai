@@ -22,7 +22,7 @@ public class PresentationActivity extends AppCompatActivity {
         imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(PresentationActivity.this,MainActivity.class));
+                startActivity(new Intent(PresentationActivity.this,ConfiguracaoTimes.class));
             }
         });
     }

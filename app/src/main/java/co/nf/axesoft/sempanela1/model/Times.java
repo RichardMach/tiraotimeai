@@ -31,10 +31,8 @@ public class Times {
 
         Collections.shuffle(times);
            for(int i=0;i<quantTimes;i++) {
-
                listTimes[i] = times.get(i);
            }
-
 
         return listTimes;
     }
