@@ -7,15 +7,21 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.Adapter;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import java.util.ArrayList;
+
 import co.nf.axesoft.sempanela1.R;
+import co.nf.axesoft.sempanela1.adapter.JogadorAdapter;
 
 public class ConfiguracaoTimes extends AppCompatActivity {
     private Toolbar toolbar;
     private ListView listView;
-    private ArrayAdapter adapter;
+    private ArrayAdapter <String> adapter;
+    private ArrayList<String> nomesJogadores;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +32,14 @@ public class ConfiguracaoTimes extends AppCompatActivity {
         toolbar = findViewById(R.id.toolbarSettingsTeam);
         toolbar.setTitle("Tira o time aí");
         setSupportActionBar(toolbar);
+
+        listView = findViewById(R.id.listViewJogadoresAdd);
+
+        //Monta o adapter
+        nomesJogadores = new ArrayList<>();
+        nomesJogadores.add("Melhor Jogador do mundo");
+        adapter =  new JogadorAdapter(getApplicationContext(),nomesJogadores);
+        listView.setAdapter(adapter);
 
 
     }
